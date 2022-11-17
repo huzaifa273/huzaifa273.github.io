@@ -12,6 +12,7 @@
 		}
 		a:hover {
 			color:#0080ff;
+			cursor: pointer;
 		}
 		#main_div{
 			height:90vh;
@@ -64,6 +65,7 @@
 			background-color:black;
 			border:none;
 			transition:0.5s;
+			cursor: pointer;
 		}
 		
 /*---------------------- Media Queries ------------------------*/
