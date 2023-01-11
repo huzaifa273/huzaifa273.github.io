@@ -1,0 +1,950 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*--------------------------Navbar Css Code------------------------------*/
+#nav-container {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #101010;
+}
+#logo-container {
+  width: 150px;
+}
+.logo {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+.nav-toggle {
+  display: none;
+}
+#links-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#links-container a {
+  transition: 0.2s;
+  color: white;
+  padding: 1% 2%;
+  font-size: 1.2rem;
+}
+#links-container a:hover {
+  transition: 0.2s;
+  color: #ff5e5c;
+}
+
+/*-------------------------Hero Section-------------------------------*/
+#hero {
+  width: 100%;
+  height: 92vh;
+  background-image: url(images/hero.png);
+  background-size: cover;
+  background-position-y: -100px;
+}
+.shade {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.801) 0%,
+    rgba(0, 0, 0, 0.705) 27%,
+    rgba(0, 0, 0, 0.603) 51%,
+    rgba(0, 0, 0, 0.507) 100%
+  );
+}
+.hero-text {
+  width: 50%;
+  height: 100%;
+  margin-left: 14%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+.malik {
+  font-weight: 100;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+.huzaifa {
+  font-weight: 900;
+  color: crimson;
+  letter-spacing: 0.5rem;
+  margin-top: -2%;
+}
+.webdeveloper {
+  display: flex;
+}
+.a {
+  color: white;
+}
+.developer {
+  color: crimson;
+}
+.hire {
+  transition: 0.3s;
+  color: rgb(228, 50, 85);
+  font-size: medium;
+  border: 2px solid crimson;
+  width: 150px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 3%;
+  border-radius: 5px;
+}
+.hire:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: crimson;
+}
+
+/*------------------------------- About ---------------------------------*/
+#about {
+  background-color: #24273d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img img {
+  width: 60%;
+  margin-left: 10%;
+}
+.about-text {
+  color: white;
+  width: 50%;
+  margin-left: -10%;
+}
+.discover {
+  color: crimson;
+  letter-spacing: 3px;
+  padding: 1%;
+}
+.about-me {
+  margin: 1%;
+  border-bottom: 2px solid crimson;
+  border-width: 2px;
+  text-overflow: visible;
+}
+.about-me-text {
+  padding: 2% 1%;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-weight: 100;
+  color: #d4d2d2;
+}
+
+.about-info {
+  margin: 1%;
+  padding: 1%;
+  border: 2px solid crimson;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-info div p {
+  margin: 10px;
+  color: #d4d2d2;
+}
+.about-info div p b {
+  color: white;
+}
+.download {
+  transition: 0.2s;
+  color: white;
+  background-color: crimson;
+  margin: 2% 1%;
+  padding: 2%;
+  width: 150px;
+  text-align: center;
+  border-radius: 3px;
+}
+.download a {
+  color: white;
+}
+.download:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgb(168, 13, 44);
+}
+
+/*--------------------------------- Skills -------------------------------------------*/
+
+#skills {
+  height: 100vh;
+  background: #1e2233;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills h3,
+h2 {
+  color: white;
+}
+.skills-heading {
+  border-bottom: 2px solid crimson;
+  padding-bottom: 2px;
+  width: 93%;
+}
+.skills-heading h4 {
+  color: crimson;
+  letter-spacing: 2px;
+}
+.skills-heading h2 {
+  color: white;
+}
+.skills-content {
+  border: 2px solid crimson;
+  border-radius: 5px;
+  width: 93%;
+  padding: 2%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.programing-skills {
+  color: white;
+  width: 50%;
+}
+.html-div,
+.js-div,
+.react-div,
+.php-div {
+  display: flex;
+  align-items: center;
+  color: #d4d2d2;
+}
+.html-div div:not(.html-div div div),
+.js-div div:not(.js-div div div),
+.react-div div:not(.react-div div div),
+.php-div div:not(.php-div div div) {
+  margin: 2%;
+}
+.bars {
+  width: 100%;
+}
+.html,
+.js,
+.react,
+.php {
+  width: 50%;
+  height: 4px;
+  background-color: rgb(172, 163, 163);
+  border-radius: 5px;
+}
+.html div,
+.js div,
+.react div,
+.php div {
+  height: 100%;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.fa-circle {
+  font-size: 0.6rem;
+  color: rgb(177, 176, 176);
+}
+.html div {
+  margin-left: 90%;
+}
+.js div {
+  margin-left: 80%;
+}
+.react div {
+  margin-left: 65%;
+}
+.php div {
+  margin-left: 75%;
+}
+.other-skills {
+  color: white;
+  width: 50%;
+}
+.main-lang {
+  margin-bottom: 5%;
+}
+.english,
+.urdu,
+.hindi {
+  width: 45%;
+  height: 4px;
+  background-color: rgb(172, 159, 159);
+  border-radius: 5px;
+}
+.lang-skills div {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  color: #d4d2d2;
+}
+.lang {
+  width: 15%;
+}
+.english i {
+  margin-left: 85%;
+}
+.urdu i {
+  margin-left: 90%;
+}
+.hindi i {
+  margin-left: 70%;
+}
+#skills ul {
+  margin-left: 5%;
+}
+#skills ul li {
+  margin: 2% 0%;
+}
+.personal-skills {
+  color: #d4d2d2;
+}
+/*--------------------------------- Services -------------------------------------------*/
+#services {
+  background-color: #24273d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services-heading {
+  border-bottom: 2px solid crimson;
+  margin: 0% 3.2%;
+  padding-bottom: 2px;
+}
+.services-heading h4 {
+  color: crimson;
+  letter-spacing: 2px;
+}
+.services-heading h2 {
+  color: white;
+}
+.services-content {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.services-content div {
+  width: 27%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid crimson;
+  border-radius: 5px;
+}
+.cardimg1 {
+  width: 100px;
+}
+.cardimg2 {
+  width: 200px;
+}
+.cardimg3 {
+  width: 170px;
+}
+.cardimg4 {
+  width: 90px;
+}
+.cardimg5 {
+  width: 150px;
+}
+.services-content div h3 {
+  color: white;
+  padding: 2% 0%;
+}
+.services-content div p {
+  color: #d4d2d2;
+}
+/*---------------------------- Portfolio Section -----------------------------------*/
+
+#portfolio {
+  height: 100vh;
+  background: #1e2233;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio div {
+  margin: 2% 0%;
+}
+.portfolio-heading {
+  border-bottom: 2px solid crimson;
+  padding-bottom: 2px;
+  width: 93.5%;
+}
+.portfolio-heading h4 {
+  color: crimson;
+  letter-spacing: 2px;
+}
+.portfolio-heading h2 {
+  color: white;
+}
+.portfolio-img {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolio-img div {
+  width: 27%;
+}
+.portfolio-img div img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*----------------------------Contact Us-----------------------------------*/
+#contact {
+  height: 100vh;
+  background-color: #24273d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact {
+  width: 35%;
+  text-align: center;
+  color: #b3b0b0;
+  padding: 2%;
+}
+.contact h2 {
+  font-size: xx-large;
+  color: white;
+  padding: 3%;
+}
+.contact p {
+  padding: 3%;
+}
+.contact-text {
+  margin-bottom: 5%;
+}
+.contact a {
+  color: #b3b0b0;
+}
+.contact h3 {
+  color: white;
+  margin-top: 5%;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons a {
+  margin: 2%;
+  margin-top: 5%;
+}
+.fb {
+  width: 48px;
+  border-radius: 8px;
+}
+.github {
+  width: 50px;
+  border-radius: 8px;
+}
+.twitter {
+  width: 51px;
+}
+.in {
+  width: 55px;
+}
+.insta {
+  width: 55px;
+}
+.contact-form {
+  border: 2px solid crimson;
+  border-radius: 5px;
+  width: 35%;
+  padding: 3%;
+  box-shadow: -10px 10px 10px #08090c;
+}
+.contact-form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 8%;
+  font-size: xx-large;
+}
+.contact-form label {
+  color: #b3b0b0;
+  font-size: small;
+}
+.contact-form input,
+textarea {
+  border: none;
+  border-bottom: 1px solid wheat;
+  width: 100%;
+  background-color: #24273d;
+  color: white;
+  margin-bottom: 8%;
+  margin-top: 0%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#submit {
+  transition: 0.2s;
+  padding: 3% 6%;
+  background-color: #1e2233;
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 5px 3px #08090c;
+}
+#submit:hover {
+  transition: 0.2s;
+  background-color: #171a27;
+  cursor: pointer;
+}
+.back {
+  position: relative;
+  left: 46%;
+}
+.fa-circle-up {
+  transition: 0.2s;
+  color: white;
+  font-size: xx-large;
+}
+.fa-circle-up:hover {
+  transition: 0.2s;
+  color: crimson;
+}
+/*------------------------------ Footer ------------------------------------*/
+#footer {
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e4472;
+  color: white;
+}
+
+/*------------------------------ Media Queries 1 --------------------------------*/
+
+/* For 768px */
+
+@media screen and (max-width: 768px) {
+  /* ---------------------------- Hero -------------------------------------- */
+
+  #hero {
+    background-size: 180%;
+    background-position-x: -200px;
+  }
+
+  /* ---------------------------- About --------------------------------- */
+
+  .about-text {
+    margin-right: 40px;
+  }
+
+  /* ---------------------------- Services ------------------------------------- */
+
+  #services {
+    height: 100%;
+    padding: 2% 0%;
+  }
+
+  /* ----------------------------- Contact ---------------------------------------- */
+
+  .contact-form {
+    width: 50%;
+  }
+}
+
+
+/* --------------------------------- Media Query 2 ------------------------------------- */
+
+/* For 500/ALL */
+
+
+  @media screen and (max-width: 688px) {
+  body {
+    background-color: #08090c;
+  } 
+
+  /* --------------------- Nav bar ---------------------------- */
+
+  
+  .nav-toggle {
+    display: block;
+    color: white;
+    font-size: large;
+  }
+  /* .links {
+    display: none;
+  } */
+  /* .show-links {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    left: 2%;
+  } */
+  .links {
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh;
+    background-color: #101010;
+  }
+  .show-links {
+    transition: 0.5s;
+    height: 50%;
+  }
+  #links-container {
+    width: 100%;
+    margin: 0%;
+  }
+  #logo-container {
+    width: 100%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ---------------------- Hero Section --------------------------------- */
+
+  .malik {
+    font-size: small;
+  }
+  .huzaifa {
+    font-size:2rem;
+  }
+  .webdeveloper {
+    font-size: medium;
+  }
+  .hire {
+    width: 100px;
+    padding: 5px 10px;
+  }
+
+  /* ------------------------- About Section --------------------------------- */
+
+  #about {
+    height: 100%;
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img img {
+    width: 250px;
+    margin: 0%;
+  }
+  .about-text{
+    width: 80%;
+    margin:0;
+  }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ---------------------------- Skills ------------------------------------- */
+  
+#skills {
+  height: 100%;
+  padding: 5% 0%;
+}
+.skills-heading {
+  width: 80%;
+}
+.skills-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.html,
+.js,
+.react,
+.php {
+  width: 100%;
+}
+.programing-skills {
+  width: 100%;
+  margin: 5% 0%;
+}
+.other-skills {
+width: 100%;
+margin: 5% 0%;
+}
+.personal-skills {
+margin-top: 10%;
+}
+.english,
+.urdu,
+.hindi {
+width: 100%;
+}
+#skills ul {
+margin-left: 10%;
+}
+
+  /* ---------------------------- Services ------------------------------------- */
+
+  .services-heading {
+    width: 80%;
+    margin: auto;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-content div {
+    width: 80%;
+    margin: 3% 0%; 
+  }
+
+  /*------------------------------ Contact --------------------------------------*/
+
+  #contact {
+    height: 100%;
+  }
+  #contact-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    width: 80%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .back {
+    position: relative;
+    left: 44%;
+  }
+
+}
+
+
+/* --------------------------------- Media Query 3 ------------------------------------- */
+
+/* For 320/Mobiles */
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #08090c;
+  }
+
+  /* --------------------- Nav bar ---------------------------- */
+  .nav-toggle {
+    display: block;
+    color: white;
+    font-size: large;
+  }
+  /* .links {
+    display: none;
+  } */
+  /* .show-links {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    left: 2%;
+  } */
+  .links {
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh;
+    background-color: #101010;
+  }
+  .show-links {
+    transition: 0.5s;
+    height: 50%;
+  }
+  #links-container {
+    width: 100%;
+    margin: 0%;
+  }
+  #logo-container {
+    width: 100%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ---------------------- Hero Section --------------------------------- */
+  #hero {
+    background-image: url(images/mobile.png);
+  }
+  .malik {
+    font-size: small;
+  }
+  .huzaifa {
+    font-size: 2rem;
+  }
+  .webdeveloper {
+    font-size: medium;
+  }
+  .hire {
+    width: 100px;
+    padding: 5px 10px;
+  }
+
+  /* ------------------------- About Section --------------------------------- */
+
+  #about {
+    height: 100%;
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img img {
+    width: 250px;
+    margin: 0%;
+  }
+  .about-text {
+    width: 80%;
+    margin: 0;
+  }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---------------------------- Skills ------------------------------------- */
+  
+  #skills {
+    height: 100%;
+    padding: 5% 0%;
+  }
+  .skills-heading {
+    width: 80%;
+  }
+  .skills-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .html,
+  .js,
+  .react,
+  .php {
+    width: 100%;
+  }
+  .programing-skills {
+    width: 100%;
+    margin: 5% 0%;
+  }
+.other-skills {
+  width: 100%;
+  margin: 5% 0%;
+}
+.personal-skills {
+  margin-top: 10%;
+}
+.english,
+.urdu,
+.hindi {
+  width: 100%;
+}
+#skills ul {
+  margin-left: 10%;
+}
+
+  /* ---------------------------- Services ------------------------------------- */
+  #services {
+    height: 100%;
+  }
+  .services-heading {
+    width: 80%;
+    margin: auto;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-content div {
+    width: 80%;
+    margin: 3% 0%;
+  }
+
+  /*------------------------------ Portfolio Section --------------------------------------*/
+
+  #portfolio {
+    height: 100%;
+  }
+  .portfolio-heading {
+    width: 80%;
+  }
+  .portfolio-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-img div {
+    width: 80%;
+  }
+
+  /*------------------------------ Contact Section --------------------------------------*/
+
+  #contact {
+    height: 100%;
+    padding-bottom: 10%;
+  }
+  #contact-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    width: 80%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .back {
+    position: relative;
+    left: 44%;
+  }
+}
+#footer {
+  height: 120%;
+}
+
+/*----------------------------- For 2k And above ------------------------------------*/
+
+@media screen and (min-width: 1400px) {
+  #services {
+    height: 100%;
+    padding: 3% 0%;
+  }
+}
+
