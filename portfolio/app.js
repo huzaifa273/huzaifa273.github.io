@@ -8,3 +8,4 @@ navToggle.addEventListener("click", function() {
 links.addEventListener("click", function() {
     links.classList.remove("show-links");
 });
+

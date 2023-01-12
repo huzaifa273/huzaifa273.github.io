@@ -16,7 +16,7 @@
       <div id="nav-container">
         <div id="logo-container">
           <a href="#nav-container">
-            <img class="logo" src="/images/huzaifa.png" alt="logo" />
+            <img class="logo" src="images/huzaifa.png" alt="logo" />
           </a>
 
           <i class="fa-solid fa-bars nav-toggle"></i>
@@ -26,9 +26,9 @@
         <div id="links-container" class="links">
           <a href="#nav-container">Home</a>
           <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
           <a href="#skills">Skills</a>
           <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -304,22 +304,22 @@
           </div>
           <div class="contact-form">
             <h2>Let's Chat</h2>
-            <form action="#" method="post">
+            <form action="https://formsubmit.co/malikhuzaifaawais1@gmail.com" method="POST">
               <label for="name">Your name</label> <br />
               <input type="text" name="name" id="name" /> <br />
-              <label for="phone">Your phone</label> <br />
+              <label for="phone">Your phone (optional)</label> <br />
               <input type="number" name="phone" id="phone" /> <br />
               <label for="email">Your e-mail</label> <br />
-              <input type="email" name="email" id="email" /> <br />
+              <input type="email" name="email" id="email" required/> <br />
               <label for="message">Message</label> <br />
               <textarea
                 name="message"
                 id="message"
                 cols="53"
-                rows="2"
+                rows="4"
               ></textarea>
               <br />
-              <button type="submit" id="submit">Send Message</button>
+              <button type="submit" class="submit" id="submit">Send Message</button>
             </form>
           </div>
         </div>

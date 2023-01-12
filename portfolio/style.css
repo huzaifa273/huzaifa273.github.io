@@ -593,17 +593,8 @@ input::-webkit-inner-spin-button {
     display: block;
     color: white;
     font-size: large;
+    margin-right: 2%;
   }
-  /* .links {
-    display: none;
-  } */
-  /* .show-links {
-    display:flex;
-    flex-direction: column;
-    position: absolute;
-    top: 9vh;
-    left: 2%;
-  } */
   .links {
     transition: 0.5s;
     height: 0;
