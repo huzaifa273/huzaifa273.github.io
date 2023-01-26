@@ -592,7 +592,7 @@ input::-webkit-inner-spin-button {
   .nav-toggle {
     display: block;
     color: white;
-    font-size: large;
+    font-size: x-large;
   }
   /* .links {
     display: none;
@@ -761,7 +761,7 @@ margin-left: 10%;
   .nav-toggle {
     display: block;
     color: white;
-    font-size: large;
+    font-size: x-large;
   }
   /* .links {
     display: none;
