@@ -1,338 +1,847 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huzaifa</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="CVup - Resume / CV / vCard Template" />
+    <meta
+      name="keywords"
+      content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio"
+    />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
     <script
       src="https://kit.fontawesome.com/2734247cc0.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/animations.css" type="text/css" />
   </head>
+
   <body>
-    <nav>
-      <div id="nav-container">
-        <div id="logo-container">
-          <a href="#nav-container">
-            <img class="logo" src="images/huzaifa.png" alt="logo" />
-          </a>
+    <!-- Animated Background -->
+    <div
+      class="lm-animated-bg"
+      style="background-image: url(img/main_bg_3.jpg)"
+    ></div>
+    <!-- /Animated Background -->
 
-          <i class="fa-solid fa-bars nav-toggle"></i>
-          <!-- <button class="nav-toggle">
-          </button> -->
+    <!-- Loading animation -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
         </div>
-        <div id="links-container" class="links">
-          <a href="#nav-container">Home</a>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#skills">Skills</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <!-- ******************************************* Hero Section ******************************************** -->
-    <main>
-      <div id="hero">
-        <div class="shade">
-          <div class="hero-text">
-            <h3 class="malik">MALIK</h3>
-            <h2 class="huzaifa">HUZAIFA</h2>
-            <div class="webdeveloper">
-              <p class="a">A &nbsp;</p>
-              <p class="developer">Web Developer</p>
-            </div>
-            <a href="#contact" class="hire"> Hire Me </a>
-          </div>
-        </div>
-      </div>
-      <!-- ******************************************* About Section ******************************************** -->
-      <div id="about">
-        <div class="about-img">
-          <img src="images/about-img.png" alt="about-img" />
-        </div>
-        <div class="about-text">
-          <h4 class="discover">Discover</h4>
-          <h2 class="about-me">About Me</h2>
-          <p class="about-me-text">
-            The name's Malik Huzaifa. I am freelance Full Stack Web Developer.
-            And I can make creative and awesome websites for the startups and
-            business. With the experience of Working in the Web Development
-            Field for the past year's. I have aquired the skills necessory to
-            build great and premium websites.
-          </p>
-          <div class="about-info">
-            <div>
-              <p><b>Name:</b> Malik Huzaifa <br /></p>
-              <p><b>Phone:</b> +92321 4088564 <br /></p>
-              <p><b>GitHub:</b> huzaifa273 <br /></p>
-            </div>
-            <div>
-              <p><b>Email:</b> malikhuzaifaawais786@gmail.com <br /></p>
-              <p><b>Freelance:</b> Available <br /></p>
-              <p><b>Age:</b> 18 <br /></p>
-            </div>
-          </div>
-          <div class="download">
-            <a href="#"> Download CV </a>
-          </div>
-        </div>
-      </div>
-      <!-- ******************************************* Skills Section ******************************************** -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <!-- /Loading animation -->
 
-      <div id="skills">
-        <div class="skills-heading">
-          <h4>What I can offer</h4>
-          <h2>My Skills</h2>
-        </div>
-        <div class="skills-content">
-          <div class="programing-skills">
-            <h3>Programing Skills</h3>
-            <div class="html-div">
-              <div><img src="images/html.png" alt="html" width="30px" /></div>
-              <div class="bars">
-                HTML & CSS
-                <div class="html">
-                  <div class="icon"><i class="fa-solid fa-circle"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="js-div">
-              <div><img src="images/js.png" alt="js" width="30px" /></div>
-              <div class="bars">
-                JavaScript
-                <div class="js">
-                  <div class="icon"><i class="fa-solid fa-circle"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="react-div">
-              <div><img src="images/react.png" alt="react" width="30px" /></div>
-              <div class="bars">
-                React
-                <div class="react">
-                  <div class="icon"><i class="fa-solid fa-circle"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="php-div">
-              <div><img src="images/php.png" alt="php" width="30px" /></div>
-              <div class="bars">
-                PHP
-                <div class="php">
-                  <div class="icon"><i class="fa-solid fa-circle"></i></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="other-skills">
-            <div class="main-lang">
-              <h3>Languages</h3>
-              <div class="lang-skills">
-                <div>
-                  <div class="lang">Eng</div>
-                  <div class="english"><i class="fa-solid fa-circle"></i></div>
-                </div>
-                <div>
-                  <div class="lang">Urdu</div>
-                  <div class="urdu"><i class="fa-solid fa-circle"></i></div>
-                </div>
-                <div>
-                  <div class="lang">Hindi</div>
-                  <div class="hindi"><i class="fa-solid fa-circle"></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="personal-skills">
-              <h3>Personal Skills</h3>
-              <div>
-                <ul>
-                  <li>Creativity</li>
-                  <li>Team Work</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="half-bg"></div>
 
-      <!-- ******************************************* Services Section ******************************************** -->
-      <div id="services">
-        <div class="services-heading">
-          <h4>What I do</h4>
-          <h2>My Services</h2>
-        </div>
-        <!-- **********************************  Services First Row  *********************************************** -->
-        <div class="services-content">
-          <div>
-            <img
-              class="cardimg1"
-              src="images/webdevelopment.png"
-              alt="webdevelopment image"
-            />
-            <h3>Web Development</h3>
-            <p>
-              Need a website to take your existing brand online? We'll work
-              together to build a digital platform that will slingshot your
-              brand into success.
-            </p>
-          </div>
-          <div>
-            <img
-              class="cardimg2"
-              src="images/optimization.png"
-              alt="optimization image"
-            />
-            <h3>Optimizations and Improvements</h3>
-            <p>
-              I can optimize your website by the process of using controlled
-              experimentation to improve a website ability to drive business
-              goals.
-            </p>
-          </div>
-          <div>
-            <img
-              class="cardimg3"
-              src="images/responsivenes.png"
-              alt="responsivenes image"
-            />
-            <h3>Responsive Web Design</h3>
-            <p>
-              I'm a developer, so I know how to create your website to run
-              across different devices using the latest technologies available.
-            </p>
-          </div>
-        </div>
-        <!-- **********************************  Services Second Row  *********************************************** -->
-        <div class="services-content">
-          <div>
-            <img
-              class="cardimg4"
-              src="images/errorhandling.png"
-              alt="error handling image"
-            />
-            <h3>Error Handling</h3>
-            <p>
-              I can handle errors that might be under the radar. But are
-              esential to be fixed for a website to work as intended.
-            </p>
-          </div>
-          <div>
-            <img
-              class="cardimg5"
-              src="images/contentmanagement.png"
-              alt="content management image"
-            />
-            <h3>Content Management</h3>
-            <p>
-              I can manage content for your website. So that next time atleat
-              you don't have to be worried about managing content.
-            </p>
-          </div>
-          <div>
-            <img
-              class="cardimg3"
-              src="images/webaudit.png"
-              alt="webaudit image"
-            />
-            <h3>Web Audit</h3>
-            <p>
-              I will do a full analysis of all the factors that affect website
-              visibility in search engines. And optimize it like never before.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- ******************************************* Portfolio Section ****************************************** -->
-
-      <div id="portfolio">
-        <div class="portfolio-heading">
-          <h4>What I did</h4>
-          <h2>My Portfolio</h2>
-        </div>
-        <div class="portfolio-img">
-          <div><a href="https://news273.000webhostapp.com" target="_blank"><img src="images/portfolioimg-1.png" alt="image" /></a></div>
-          <div><a href="https://forum273.000webhostapp.com" target="_blank"><img src="images/portfolioimg-2.png" alt="image" /></a></div>
-          <div><a href="#"><img src="images/portfolioimg-3.png" alt="image" /></a></div>
-        </div>
-      </div>
-      <!-- ******************************************* Portfolio Section End ****************************************** -->
-
-      <!-- ******************************************* Contact Section ******************************************** -->
-      <div id="contact">
-        <div id="contact-div">
-          <div class="contact">
-            <h2>Get in Touch</h2>
-            <p class="contact-text">
-              The seemingly impersonal contact form in the side will deliver
-              your message personally into my inbox. Feel free to use it. I
-              usually reply within 03 hours.
-            </p>
-            <h3>Address</h3>
-            <p>H-45, F-8, Islamabad, Pakistan</p>
-            <h3>Phone:</h3>
-            <p>+92321 4088564</p>
-            <h3>E-mail</h3>
-            <a href="#">malikhuzaifaawais786@gmail.com</a> <br />
-            <div class="icons">
-              <a href="https://github.com/huzaifa273" target="_blank">
-                <img class="github" src="images/github.png" alt="GitHub" />
-              </a>
-              <a href="https://twitter.com/huzaifa273" target="_blank">
-                <img class="twitter" src="images/twitter.png" alt="twitter" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/huzaifa-awais-bbb1a925b/"
-                target="_blank"
-              >
-                <img class="in" src="images/in.png" alt="Linkedin" />
-              </a>
-              <a
-                href="https://www.instagram.com/huzaifa_273/?hl=en"
-                target="_blank"
-              >
-                <img class="insta" src="images/insta.png" alt="instagram" />
-              </a>
-              <a
-                href="https://www.facebook.com/malik.huzaifa.33483903"
-                target="_blank"
-              >
-                <img class="fb" src="images/fb.png" alt="facebook" />
-              </a>
+    <div class="page">
+      <div class="page-content">
+        <header id="site_header" class="header mobile-menu-hide">
+          
+          <div class="header-content">
+            <div class="header-photo">
+              <img src="img/main_photo.jpg" alt="Huzaifa" />
+            </div>
+            <div class="header-titles">
+              <h2>Huzaifa Awais</h2>
+              <h4>Web Developer</h4>
             </div>
           </div>
-          <div class="contact-form">
-            <h2>Let's Chat</h2>
-            <form action="#" method="post">
-              <label for="name">Your name</label> <br />
-              <input type="text" name="name" id="name" /> <br />
-              <label for="phone">Your phone</label> <br />
-              <input type="number" name="phone" id="phone" /> <br />
-              <label for="email">Your e-mail</label> <br />
-              <input type="email" name="email" id="email" /> <br />
-              <label for="message">Message</label> <br />
-              <textarea
-                name="message"
-                id="message"
-                cols="53"
-                rows="2"
-              ></textarea>
-              <br />
-              <button type="submit" id="submit">Send Message</button>
-            </form>
+
+          <ul class="main-menu">
+            <li>
+              <a href="#about-me" class="nav-anim" tabindex=1>
+                <span class="menu-icon lnr"
+                  ><i class="fa-solid fa-user"></i
+                ></span>
+                <span class="link-text">About Me</span>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" class="nav-anim">
+                <span class="menu-icon lnr"
+                  ><i class="fa-solid fa-graduation-cap"></i
+                ></span>
+                <span class="link-text">Resume</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-anim">
+                <span class="menu-icon lnr"
+                  ><i class="fa-solid fa-briefcase"></i
+                ></span>
+                <span class="link-text">Portfolio</span>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#blog" class="nav-anim">
+                <span class="menu-icon lnr lnr-book"></span>
+                <span class="link-text">Blog</span>
+              </a>
+            </li> -->
+            <li>
+              <a href="#contact" class="nav-anim">
+                <span class="menu-icon lnr"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <span class="link-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="social-links">
+            <h5 style="margin: 0%;">Social</h5>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/malik.huzaifa.33483903" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/huzaifa273" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/huzaifa-awais-bbb1a925b/" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="social-links">
+            <h5 style="margin: 0%;">Work</h5>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/malik.huzaifa.33483903" target="_blank"
+                  ><img src="./img/icons/fiver.jpg" alt="fiver"></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/malik.huzaifa.33483903" target="_blank"
+                  ><img src="./img/icons/upwork.jpg" alt="upwork"></a>
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="info-list">
+            <ul>
+              <li>
+                <span class="value">+92321-4088564</span>
+              </li>
+
+              <li>
+                <span class="value"
+                  >
+                  <!-- <a href="/cdn-cgi/l/email-protection" class="__cf_email__"data-cfemail="ff9e939a87bf8c92968b97d19c9092">[email&#160;protected]</a></span> -->
+                  <span>malikhuzaifaawais1@gmail.com </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-buttons">
+            <a href="./img/CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+          </div>
+
+          <div class="copyrights">© 2023 All rights reserved.</div>
+        </header>
+
+        <!-- Mobile Navigation -->
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- End Mobile Navigation -->
+
+        <!-- Arrows Nav -->
+        <div class="lmpixels-arrows-nav">
+          <div class="lmpixels-arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="lmpixels-arrow-left">
+            <i class="fa-solid fa-chevron-left"></i>
           </div>
         </div>
-        <div class="back">
-          <a href="#nav-container"> <i class="fa-solid fa-circle-up"></i> </a>
+        <!-- End Arrows Nav -->
+
+        <!-- ***************** About Me Section ****************** -->
+        
+        <div class="orbit">
+          <div class='orbit-container'>
+            <div class='eye'></div>
+            <div class='eye'></div>
+          </div>
+        </div>
+        <!-- <div class="orbit">
+          <img src="./img/orbiter.png" alt="orbiter">
+          <div class='orbit-container'>
+            <div class='eye'></div>
+            <div class='eye'></div>
+          </div>
+        </div> -->
+        <div class="content-area">
+          <div class="animated-sections">
+            <!-- About Me Subpage -->
+            <section data-id="about-me" class="animated-section">
+              
+              <div class="section-content">
+                <div class="row flex-v-align">
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="home-text hp-left">
+                      <div class="owl-carousel text-rotation">
+                        <div class="item">
+                          <h4>Full Stack Web Developer</h4>
+                        </div>
+                        <div class="item">
+                          <h4>Web Designer</h4>
+                        </div>
+                        <div class="item">
+                          <h4>Freelancer</h4>
+                        </div>
+                      </div>
+
+                      <h2>Huzaifa Awais</h2>
+                      <p>
+                        Greetings! The name's Huzaifa Awais, I'm a full-stack web developer passionate about crafting immersive and efficient user experiences. My expertise lies in web development, with a strong command of HTML, CSS, JavaScript, and frameworks like React and Laravel. I take pride in delivering high-quality solutions that exceed client expectations. Allow me to bring my skills and enthusiasm to the table, and together we can create an exceptional website.
+                      </p>
+
+                      <div class="home-buttons">
+                        <!-- <a
+                          href="./img/CV.pdf"
+                          target="_blank"
+                          class="btn btn-primary"
+                          >Download CV</a
+                        >
+                        <a
+                          href="#contact"
+                          target="_self"
+                          class="btn btn-secondary"
+                          >Contact</a
+                        > -->
+                        <a href="#contact" target="_self" class="btn-3">Contact</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="home-photo">
+                      <div
+                        class="hp-inner"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="white-space-70"></div>
+
+                <!-- Fun Facts -->
+                <div class="row">
+
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="fun-fact gray-default">
+                      <i class="fa-regular fa-clock"></i>
+                      <h4>Working Hours</h4>
+                      <span class="fun-fact-block-value">6,840+</span>
+                      <span class="fun-fact-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="fun-fact gray-default">
+                      <i class="fa-regular fa-star"></i>
+                      <h4>Awards Won</h4>
+                      <span class="fun-fact-block-value">6</span>
+                      <span class="fun-fact-block-text"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Fun Facts -->
+
+                <div class="white-space-70"></div>
+
+                <!-- Services -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="block-title">
+                      <h3>What I Do</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="col-inner">
+                      <div class="info-list-w-icon">
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <img src="./img/icons/web.png" alt="icon">
+                          </div>
+                          <div class="ci-text">
+                            <h4>Web Development</h4>
+                            <p>
+                              Looking to establish your brand's online presence? Let's collaborate to create a powerful digital platform that will launch your brand to new heights of success. Our joint efforts will result in a custom website that reflects your unique brand identity and captivates your target audience.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <img src="./img/icons/responsive.png" alt="icon">
+                          </div>
+                          <div class="ci-text">
+                            <h4>Responsive Web Design</h4>
+                            <p>
+                              As a developer, I possess expertise in creating websites that run seamlessly across various devices, utilizing cutting-edge technologies. I can ensure that your website is optimized for user experience, regardless of the user's device or screen size. Let me use my technical knowledge and skills to build you a website that is fast, responsive, and engaging.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="col-inner">
+                      <div class="info-list-w-icon">
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <img src="./img/icons/management.png" alt="icon">
+                          </div>
+                          <div class="ci-text">
+                            <h4>Content Management</h4>
+                            <p>
+                              I can handle content management for your website so that you can focus on other important tasks. With my support, you won't have to worry about managing content, allowing you to save time and ensure that your website stays up-to-date and engaging for your audience.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <img src="./img/icons/error.png" alt="icon">
+                          </div>
+                          <div class="ci-text">
+                            <h4>Error Handling</h4>
+                            <p>
+                              I can identify and troubleshoot errors that may be overlooked but are critical to resolving to ensure that your website functions smoothly and seamlessly. By addressing these issues, I can enhance the user experience and prevent potential problems down the line, giving you peace of mind and allowing your website to operate as intended.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Services -->
+                </div>
+            </section>
+            <!-- End of About Me Subpage -->
+
+            <!-- ******************** Resume ************************ -->
+
+            <!-- Resume Subpage -->
+            <section data-id="resume" class="animated-section">
+              <div class="section-content">
+                <div class="page-title">
+                  <h2>Resume</h2>
+                  <h4>2+ Years of Experience</h4>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-7">
+                    <div class="block-title">
+                      <h3>Education</h3>
+                    </div>
+
+                    <div class="timeline timeline-second-style clearfix">
+                      <div class="timeline-item clearfix">
+                        <div class="left-part">
+                          <h5 class="item-period">2022</h5>
+                          <span class="item-company"
+                            >Masia Institude Rawalpindi</span
+                          >
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                          <h4 class="item-title">Full Stack Developer</h4>
+                          <p>
+                            As a student who studied full stack web development, I gained a comprehensive understanding of full stack web development. Which include knowledge of programming languages such as HTML, CSS, JavaScript and PHP as well as popular frameworks like React, Node.js, and Laravel etc
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="timeline-item clearfix">
+                        <div class="left-part">
+                          <h5 class="item-period">2023</h5>
+                          <span class="item-company"
+                            >Bahria University Islamabad</span
+                          >
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                          <h4 class="item-title">BSIT</h4>
+                          <p>
+                            During My Bachelor degree at university, I gained knowledge in programming, algorithms, data structures, database systems, computer architecture, and software engineering, as well as experience in problem-solving, critical thinking, and collaboration with others.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="white-space-50"></div>
+
+                  </div>
+
+                  <!-- Skills & Certificates -->
+                  <div class="col-xs-12 col-sm-5">
+                    <!-- Design Skills -->
+                    <div class="block-title">
+                      <h3>Front End Coding Skills</h3>
+                    </div>
+
+                    <div class="skills-info skills-second-style">
+                      <!-- Skill 1 -->
+                      <div class="skill clearfix">
+                        <h4>JavaScript</h4>
+                        <div class="skill-value">95%</div>
+                      </div>
+                      <div class="skill-container skill-1">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 1 -->
+
+                      <!-- Skill 2 -->
+                      <div class="skill clearfix">
+                        <h4>React.JS</h4>
+                        <div class="skill-value">85%</div>
+                      </div>
+                      <div class="skill-container skill-2">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 2 -->
+
+                      <!-- Skill 3 -->
+                      <div class="skill clearfix">
+                        <h4>HTML/CSS</h4>
+                        <div class="skill-value">98%</div>
+                      </div>
+                      <div class="skill-container skill-3">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 3 -->
+
+                      <!-- Skill 4 -->
+                      <div class="skill clearfix">
+                        <h4>bootstrap/JQuery</h4>
+                        <div class="skill-value">90%</div>
+                      </div>
+                      <div class="skill-container skill-4">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 4 -->
+                    </div>
+                    <!-- End of Design Skills -->
+
+                    <div class="white-space-10"></div>
+
+                    <!-- Coding Skills -->
+                    <div class="block-title">
+                      <h3>Back End Coding Skills</h3>
+                    </div>
+
+                    <div class="skills-info skills-second-style">
+                      <!-- Skill 5 -->
+                      <div class="skill clearfix">
+                        <h4>PHP</h4>
+                        <div class="skill-value">90%</div>
+                      </div>
+                      <div class="skill-container skill-5">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 5 -->
+
+                      <!-- Skill 6 -->
+                      <div class="skill clearfix">
+                        <h4>Laravel</h4>
+                        <div class="skill-value">80%</div>
+                      </div>
+                      <div class="skill-container skill-6">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 6 -->
+
+                      <!-- Skill 7 -->
+                      <div class="skill clearfix">
+                        <h4>MySQL</h4>
+                        <div class="skill-value">95%</div>
+                      </div>
+                      <div class="skill-container skill-7">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 7 -->
+
+                      <!-- Skill 8 -->
+                      <div class="skill clearfix">
+                        <h4>Firebase</h4>
+                        <div class="skill-value">75%</div>
+                      </div>
+                      <div class="skill-container skill-8">
+                        <div class="skill-percentage"></div>
+                      </div>
+                      <!-- End of Skill 8 -->
+                    </div>
+                    <!-- End of Coding Skills -->
+
+                    <div class="white-space-10"></div>
+
+                    <!-- Knowledges -->
+                    <div class="block-title">
+                      <h3>Knowledges</h3>
+                    </div>
+
+                    <ul class="knowledges">
+                      <li>SEO</li>
+                      <li>Testing and debugging</li>
+                      <li>Web security</li>
+                      <li>Project management</li>
+                      <li>GitHub</li>
+                      <li>Web server</li>
+                      <li>Database management</li>
+                    </ul>
+                    <!-- End of Knowledges -->
+                  </div>
+                  <!-- End of Skills & Certificates -->
+                </div>
+                <div class="white-space-50"></div>
+              </div>
+            </section>
+            <!-- End of Resume Subpage -->
+
+            <!-- ********************* Portfolio Section *********************** -->
+
+            <!-- Portfolio Subpage -->
+            <section data-id="portfolio" class="animated-section">
+              <div class="section-content">
+                <div class="page-title">
+                  <h2>Portfolio</h2>
+                  <h4>My Best Works</h4>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <!-- Portfolio Content -->
+                    <div class="portfolio-content">
+                      <ul class="grid-filters portfolio-filters">
+                        <li class="active">
+                          <a
+                            class="filter btn btn-sm btn-link"
+                            data-filter=".category_all"
+                            >All</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="filter btn btn-sm btn-link"
+                            data-filter=".category_detailed"
+                            >Detailed</a
+                          >
+                        </li>
+                        <!-- <li>
+                          <a
+                            class="filter btn btn-sm btn-link"
+                            data-filter=".category_mockups"
+                            >Mockups</a
+                          >
+                        </li> -->
+                        <li>
+                          <a
+                            class="filter btn btn-sm btn-link"
+                            data-filter=".category_soundcloud"
+                            >Clone</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="filter btn btn-sm btn-link"
+                            data-filter=".category_vimeo-videos"
+                            >Forum</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="filter btn btn-sm btn-link"
+                            data-filter=".category_youtube-videos"
+                            >Fun</a
+                          >
+                        </li>
+                      </ul>
+
+                      <!-- Portfolio Grid -->
+                      <div class="portfolio-grid two-columns">
+                        <figure
+                          class="item lbaudio category_all category_soundcloud"
+                        >
+                          <div class="portfolio-item-img">
+                            <img
+                              src="img/portfolio/1.jpg"
+                              alt="SoundCloud Audio"
+                              title=""
+                            />
+                            <a
+                              href="http://amazon273.000webhostapp.com/"
+                              target="_blank"
+                            ></a>
+                          </div>
+
+                          <i class="fa fa-volume-up"></i>
+                          <h4 class="name"><span>Amazon</span> Clone</h4>
+                          <span class="category">Amazon</span>
+                        </figure>
+
+                        <figure
+                          class="item standard category_all category_detailed"
+                        >
+                          <div class="portfolio-item-img">
+                            <img
+                              src="img/portfolio/2.jpg"
+                              alt="Media Project 2"
+                              title=""
+                            />
+                            <a
+                              href="https://news273.000webhostapp.com/"
+                              target="_blank"
+                            ></a>
+                          </div>
+
+                          <i class="far fa-file-alt"></i>
+                          <h4 class="name"><span>News</span> Website</h4>
+                          <span class="category">Include Admin Panel</span>
+                        </figure>
+                        <figure
+                          class="item lbvideo category_all category_vimeo-videos"
+                        >
+                          <div class="portfolio-item-img">
+                            <img
+                              src="img/portfolio/3.jpg"
+                              alt="Vimeo Video 1"
+                              title=""
+                            />
+                            <a
+                              href="https://forum273.000webhostapp.com/"
+                              target="_blank"
+                            ></a>
+                          </div>
+
+                          <i class="fas fa-video"></i>
+                          <h4 class="name"><span>Forum</span> Tech</h4>
+                          <span class="category">Question & Answers</span>
+                        </figure>
+
+                      </div>
+                    </div>
+                    <!-- End of Portfolio Content -->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Portfolio Subpage -->
+
+            <!-- **************** Contact Us ******************** -->
+
+            <!-- Contact Subpage -->
+            <section data-id="contact" class="animated-section">
+              <div class="section-content">
+                <div class="page-title">
+                  <h2>Contact</h2>
+                  <h4>Get in Touch</h4>
+                </div>
+
+                <div class="row">
+                  <!-- Contact Info -->
+                  <!-- <div class="col-xs-12 col-sm-4">
+                    <div class="lm-info-block gray-default">
+                        <i class="fa-solid fa-location-dot"></i>
+                      <h4>Islamabad</h4>
+                      <span class="lm-info-block-value"></span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div> -->
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="lm-info-block gray-default">
+                        <i class="fa-solid fa-phone"></i>
+                      <h4>+92321-4088564</h4>
+                      <span class="lm-info-block-value"></span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="lm-info-block gray-default">
+                        <i class="fa-solid fa-envelope"></i>
+                      <p>
+                        malikhuzaifaawais1@gmail.com
+                    </p>
+                      <span class="lm-info-block-value"></span>
+                      <span class="lm-info-block-text"></span>
+                    </div>
+                  </div>
+                  <!-- End of Contact Info -->
+                </div>
+
+                <div class="row">
+                  <!-- Google Map -->
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="white-space-20"></div>
+                    <!-- Google Map -->
+                    <div class="lmpixels-map">
+                      <!-- <iframe></iframe> -->
+                    </div>
+                  </div>
+                  <!-- End of Google Map -->
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-2"></div>
+                  <!-- Contact Form -->
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="white-space-30"></div>
+                    <div class="block-title">
+                      <h3>How Can I Help You?</h3>
+                    </div>
+
+                    <form
+                      class="contact-form"
+                      action="https://formsubmit.co/malikhuzaifaawais1@gmail.com"
+                      method="POST"
+                    >
+                      <div class="messages"></div>
+
+                      <div class="controls two-columns">
+                        <div class="fields clearfix">
+                          <div class="left-column">
+                            <div class="form-group form-group-with-icon">
+                              <input
+                                type="text"
+                                name="name"
+                                class="form-control"
+                                placeholder=""
+                              />
+                              <label>Full Name</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group form-group-with-icon">
+                              <input
+                                type="email"
+                                name="email"
+                                class="form-control"
+                                placeholder=""
+                                required="required"
+                                data-error="Valid email is required."
+                              />
+                              <label>Email Address *</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group form-group-with-icon">
+                              <input
+                                type="text"
+                                name="subject"
+                                class="form-control"
+                                placeholder=""
+                                data-error="Subject is required."
+                              />
+                              <label>Subject</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="right-column">
+                            <div class="form-group form-group-with-icon">
+                              <textarea
+                                id="form_message"
+                                name="message"
+                                class="form-control"
+                                placeholder=""
+                                rows="7"
+                                required="required"
+                                data-error="Please, leave me a message."
+                              ></textarea>
+                              <label>Message *</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <input type="hidden" name="_next" value="https://huzaifa273.github.io/portfolio/#contact">
+                          <input type="hidden" name="_autoresponse" value="Hello! Thank you for reaching out to me. I will do my best to respond to your message once I am online.">
+                        </div>
+                        <input
+                          type="submit"
+                          class="button btn-send"
+                          value="Send message"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <!-- End of Contact Form -->
+                </div>
+              </div>
+            </section>
+            <!-- End of Contact Subpage -->
+          </div>
         </div>
       </div>
-      <!-- ******************************* Footer *************************************** -->
-      <div id="footer">
-        <p>&copy;Copyrights: All Rights Reserved</p>
-      </div>
-    </main>
+    </div>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon='{"rayId":"79b45fd869456c1d","version":"2023.2.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}'
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="app.js"></script>
 </html>
