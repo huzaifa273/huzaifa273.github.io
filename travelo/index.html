@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2734247cc0.js" crossorigin="anonymous"></script>
+  <title>Travelo</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="img/logo.png" alt="Travelo" class="logo">
+      <ul>
+        <div class="registration" id="registration">
+          <li>
+            <a href="./login.html">login</a>
+          </li>
+          <li>
+            <a href="./signup.html">Sign up</a>
+          </li>
+        </div>
+        <li class="search">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+        <li class="hamburger" id="hamburger-btn">
+          <a href="#">
+            <div class="bar"></div>
+          </a>
+        </li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main">
+      <div class="vignette"></div>
+      <img src="img/background.png" data-speedx="0.2" data-speedy="0.7" class="parallax bg-img" alt="">
+      <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.2" class="parallax fog-7" alt="">
+      <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" class="parallax mountain-10" alt="">
+      <img src="img/fog_6.png" data-speedx="0.25" data-speedy="0.28" class="parallax fog-6" alt="">
+      <img src="img/mountain_9.png" data-speedx="0.04" data-speedy="0.5" class="parallax mountain-9" alt=""> <!--left lean mountain-->
+      <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.25" class="parallax mountain-8" alt=""> <!--center tall lean mountain-->
+      <!-- <img src="img/fog_5.png" data-speedx="0.16" data-speedy="0.105" class="parallax fog-5" alt=""> -->
+      <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.25" class="parallax mountain-7" alt="">
+      <div class="text parallax"  data-speedx="0.07" data-speedy="0.07">
+        <h2>Your Adventure</h2>
+        <h1>Start here</h1>
+        <!-- <a href="#"><i class="fa-solid fa-arrow-right"></i></a> -->
+      </div>
+      <img src="img/mountain_6.png" data-speedx="0.05" data-speedy="0.3" class="parallax mountain-6" alt=""> <!--Right lean mountain-->
+      <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.2" class="parallax fog-4" alt=""> <!-- Y values Edited by me -->
+      <img src="img/mountain_5.png" data-speedx="0.08" data-speedy="0.2" class="parallax mountain-5" alt=""> <!-- Y values Edited by me -->
+      <img src="img/fog_3.png" data-speedx="0.2" data-speedy="0.32" class="parallax fog-3" alt=""> 
+      <img src="img/mountain_4.png" data-speedx="0.15" data-speedy="0.1" class="parallax mountain-4" alt=""> <!--left front Mountain without fog-->
+      <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" class="parallax mountain-3" alt="">
+      <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" class="parallax fog-2" alt="">
+      <img src="img/mountain_2.png" data-speedx="0.20" data-speedy="0.33" class="parallax mountain-2" alt=""> <!--right front Mountain with fog-->
+      <img src="img/mountain_1.png" data-speedx="0.07" data-speedy="0.18" class="parallax mountain-1" alt="">
+      <img src="img/sun_rays.png" class="sun-rays" alt="">
+      <img src="img/black_shadow.png" class="black-shadow" alt="">
+      <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" class="parallax fog-1" alt="">
+    </div>
+    <div class="details">
+      <article class="theme__holiday">
+        <h3 class="holiday__title">Search your next holiday</h3>
+        <p class="holiday__text">CHECK OUR BEST PROMOTIONS</p>
+        <div class="holiday__search flex-box">
+          <input type="text" placeholder="Choose your destination..." class="holiday__search-btn">
+          <i class='bx bx-search'></i>
+        </div>
+        <div class="holiday__choose-wrap flex-box">
+          <div class="holiday__choose-item">
+            <a href="">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/t-relax.png" alt="">
+              <span>RELAX</span>
+            </a>
+          </div>
+          <div class="holiday__choose-item">
+            <a href="">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/t-cultural.png" alt="">
+              <span>CULTUR</span>
+            </a>
+          </div>
+          <div class="holiday__choose-item">
+            <a href="">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/t-sport.png" alt="">
+              <span>SPORT</span>
+            </a>
+          </div>
+          <div class="holiday__choose-item">
+            <a href="">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/t-history.png" alt="">
+              <span>HISTORY</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="our-proposals">
+      <section class="dest__wrap">
+        <p class="sub-title__text">OUR PROPOSALS</p>
+        <h2 class="title__text">OUR <span class="--title__text-underline dest-text">DESTINATIONS</span></h2>
+        <article class="dest__list">
+          <!-- Europe -->
+          <div class="dest__item-flex">
+            <div class="dest__item abc dest__europe">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/arch.png" alt="">
+              <div class="dest__item-info">
+                <p class="dest__item-title">Europe</p>
+                <p class="dest__item-text">3 PACKAGES</p>
+              </div>
+              <div class="dest__overlay">
+                <h5>Packages</h5>
+                <ul class="dest__overlay-list">
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Berlin</a>
+                  </li>
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Amsterdam</a>
+                  </li>
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Tuscany</a>
+                  </li>
+                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Thailandia -->
+          <div class="dest__item-flex">
+            <div class="dest__item abc dest__thailandia">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/buddha.png" alt="">
+              <div class="dest__item-info">
+                <p class="dest__item-title">Thailandia</p>
+                <p class="dest__item-text">1 PACKAGES</p>
+              </div>
+              <div class="dest__overlay">
+                <h5>Packages</h5>
+                <ul class="dest__overlay-list">
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Phuket</a>
+                  </li>
+                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Asia -->
+          <div class="dest__item-flex">
+            <div class="dest__item abc dest__asia">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/torii-gate.png" alt="">
+              <div class="dest__item-info">
+                <p class="dest__item-title">Asia</p>
+                <p class="dest__item-text">2 PACKAGES</p>
+              </div>
+              <div class="dest__overlay">
+                <h5>Packages</h5>
+                <ul class="dest__overlay-list">
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Hong Kong</a>
+                  </li>
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Phuket</a>
+                  </li>
+                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Italia -->
+          <div class="dest__item-flex">
+            <div class="dest__item abc dest__italy">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/pisa.png" alt="">
+              <div class="dest__item-info">
+                <p class="dest__item-title">Italy</p>
+                <p class="dest__item-text">1 PACKAGES</p>
+              </div>
+              <div class="dest__overlay">
+                <h5>Packages</h5>
+                <ul class="dest__overlay-list">
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Tuscany</a>
+                  </li>
+                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Netherlands -->
+          <div class="dest__item-flex">
+            <div class="dest__item abc dest__netherlands">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/london-eye.png" alt="">
+              <div class="dest__item-info">
+                <p class="dest__item-title">Netherlands</p>
+                <p class="dest__item-text">1 PACKAGES</p>
+              </div>
+              <div class="dest__overlay">
+                <h5>Packages</h5>
+                <ul class="dest__overlay-list">
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">Amsterdam</a>
+                  </li>
+                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- United States -->
+          <div class="dest__item-flex">
+            <div class="dest__item abc dest__usa">
+              <img src="https://leloc90.github.io/loveTravel/assets/images/golden-gate.png" alt="">
+              <div class="dest__item-info">
+                <p class="dest__item-title">United States</p>
+                <p class="dest__item-text">1 PACKAGES</p>
+              </div>
+              <div class="dest__overlay">
+                <h5>Packages</h5>
+                <ul class="dest__overlay-list">
+                  <li class="dest__overlay-item">
+                    <a href="" class="dest__overlay-link">San Francisco</a>
+                  </li>
+                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+        </article>
+      </section>
+    </div>
+    <div class="tours">
+      <!-- TOURS -->
+      <section class="tours__container">
+        <article class="tours__beaches">
+          <div class="beaches__info">
+            <p class="sub-title__text">NORTH AMERICA</p>
+            <h2 class="title__text">The Best <span class="--title__text-underline beaches-text">Beaches</span></h2>
+            <p class="beaches__desc">
+              Navagio Beach is on the north end of Zante. The Greek island is also known as Zakynthos and it's one of Greece's most popular islands among tourists.
+            </p>
+            <div class="beaches__price">
+              <span class="beaches__old-price">800$</span>
+              <span class="beaches__new-price">500$</span>
+              <span class="beaches__price-person">/ FOR PERSON</span>
+            </div>
+            <a href="" class="pri-btn beaches__btn">BOOK NOW</a>
+          </div>
+      
+          <div class="beaches__wrap">
+            <div class="beaches__bullets">
+              <a href="#beaches__img-1" class="beaches__bullets-item"></a>
+              <a href="#beaches__img-2" class="beaches__bullets-item"></a>
+              <a href="#beaches__img-3" class="beaches__bullets-item"></a>
+            </div>
+            <div class="beaches__img-container">
+              <div id="beaches__img-1" class="beaches__img-main beaches__img-1"></div>
+              <div id="beaches__img-2" class="beaches__img-main beaches__img-2"></div>
+              <div id="beaches__img-3" class="beaches__img-main beaches__img-3"></div>
+            </div>
+            <div class="beaches__wrap-time">
+              <div class="time__block">
+                <span class="time__number">09</span>
+                <span class="time__text">DAYS</span>
+              </div>
+              <div class="time__block">
+                <span class="time__number">07</span>
+                <span class="time__text">HOURS</span>
+              </div>
+              <div class="time__block">
+                <span class="time__number">25</span>
+                <span class="time__text">MINUTES</span>
+              </div>
+              <div class="time__block">
+                <span class="time__number">43</span>
+                <span class="time__text">SECONDS</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      
+        <article class="tours__list">
+          <div class="tours__item">
+            <img src="https://leloc90.github.io/loveTravel/assets/images/icon-around.png" alt="">
+            <div class="tours__info">
+              <h5>World Tour</h5>
+              <p>Embark on an unforgettable global adventure with us. And explore the wonders of the world</p>
+              <a href="">View more</a>
+            </div>
+          </div>
+      
+          <div class="tours__item">
+            <img src="https://leloc90.github.io/loveTravel/assets/images/icon-boat.png" alt="">
+            <div class="tours__info">
+              <h5>Cruises</h5>
+              <p>Go on an unforgettable voyage across the world's seas and oceans with our extraordinary cruise packages.</p>
+              <a href="">View more</a>
+            </div>
+          </div>
+      
+          <div class="tours__item">
+            <img src="https://leloc90.github.io/loveTravel/assets/images/icon-landmark.png" alt="">
+            <div class="tours__info">
+              <h5>Best Tours</h5>
+              <p>Immerse yourself in the wonders of the world with our handcrafted collection of the best tours.</p>
+              <a href="">View more</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div>
+      <!-- PROMOTION -->
+      <section class="promotion__container">
+        <p class="sub-title__text">PROMOTIONS</p>
+        <h2 class="title__text">OUR <span class="--title__text-underline promotion-text">PACKAGES</span></h2>
+      
+        <article class="promotion__wrap">
+          <div class="promotion__item">
+            <div class="promotion__item-img --item-img-1">
+              <div class="promotion__item-sticker-1">
+                <img class="sticker__img" src="https://leloc90.github.io/loveTravel/assets/images/arch.png" alt="">
+              </div>
+            </div>
+            <div class="promotion__item-info">
+              <div class="promotion__item-head">
+                <h5>Berlin</h5>
+                <p><i class='bx bx-map'></i>Europe</p>
+              </div>
+              <div class="promotion__item-thema">
+                <div class="promotion__item-thema-text">
+                  <p>CULTURAL</p>
+                  <P>RELAX<span style="background-color: #ffd205;">+ 1</span></P>
+      
+                </div>
+                <div class="promotion__item-thema-price">
+                  <span>700 $</span>
+                </div>
+              </div>
+              <div class="promotion__item-desc">
+                <p>Discover the vibrant city of Berlin, where history and modernity intertwine. Immerse yourself in its captivating culture, visit iconic landmarks like the Brandenburg Gate.</p>
+              </div>
+              <a href="" class="pri-btn promotion-btn-1">DETAILS</a>
+            </div>
+          </div>
+      
+          <div class="promotion__item">
+            <div class="promotion__item-img --item-img-2">
+              <div class="promotion__item-sticker-2">
+                <img class="sticker__img" src="https://leloc90.github.io/loveTravel/assets/images/torii-gate.png" alt="">
+              </div>
+            </div>
+            <div class="promotion__item-info">
+              <div class="promotion__item-head">
+                <h5>Hong Kong</h5>
+                <p><i class='bx bx-map'></i>Asia</p>
+              </div>
+              <div class="promotion__item-thema">
+                <div class="promotion__item-thema-text">
+                  <p>HISTORY</p>
+                  <P>CULTURAL<span style="background-color: #f76570;">+ 1</span></P>
+      
+                </div>
+                <div class="promotion__item-thema-price">
+                  <span class="old-price">1000</span>
+                  <span>500 $</span>
+                </div>
+              </div>
+              <div class="promotion__item-desc">
+                <p>Explore the vibrant fusion of eastern and western cultures in the dazzling cityscape of Hong Kong, where towering skyscrapers meet ancient temples.</p>
+              </div>
+              <a href="" class="pri-btn promotion-btn-2">DETAILS</a>
+            </div>
+          </div>
+      
+          <div class="promotion__item">
+            <div class="promotion__item-img --item-img-3">
+              <div class="promotion__item-sticker-3">
+                <img class="sticker__img" src="https://leloc90.github.io/loveTravel/assets/images/golden-gate.png" alt="">
+              </div>
+            </div>
+            <div class="promotion__item-info">
+              <div class="promotion__item-head">
+                <h5>Sanfrancisco</h5>
+                <p><i class='bx bx-map'></i>United State</p>
+              </div>
+              <div class="promotion__item-thema">
+                <div class="promotion__item-thema-text">
+                  <p>SPORT</p>
+                  <P>RELAX<span style="background-color: #ba71da;">+ 1</span></P>
+      
+                </div>
+                <div class="promotion__item-thema-price">
+                  <span>400 $</span>
+                </div>
+              </div>
+              <div class="promotion__item-desc">
+                <p>Discover the vibrant charm of San Francisco, where the iconic Golden Gate Bridge welcomes you to a city brimming with it's cultural diversity.</p>
+              </div>
+              <a href="" class="pri-btn promotion-btn-3">DETAILS</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+  <!-- FOOTER -->
+      
+  <footer>
+    <section class="footer__container">
+  
+      <article class="footer__head">
+        <div class="footer__title">
+          <p>KEEP IN TOUCH</p>
+          <h5>Travel with us</h5>
+        </div>
+        <div class="footer__input">
+          <input type="text" placeholder="your email">
+          <a href="malikhuzaifaawasi1@gmail.com" class="pri-btn footer__btn">SEND</a>
+        </div>
+      </article>
+  
+      <article class="footer__body">
+        <div class="footer__body-left">
+          <div class="footer__logo">
+            <img src="https://unblast.com/wp-content/uploads/2020/03/Girl-Traveling-Illustration-1.jpg" alt="">
+          </div>
+          <p class="hide-on-mobile">
+            Welcome to our world of travel exploration! We are passionate globetrotters dedicated to curating unforgettable experiences and guiding you on an extraordinary journey around the globe.
+          </p>
+          <div class="footer__social-icon">
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-youtube'></i></a>
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt'></i></a>
+          </div>
+        </div>
+  
+        <div class="footer__body-right">
+  
+          <div class="footer__body-info">
+            <h5>OUR AGENCY</h5>
+            <ul class="footer__info-list">
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Services</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Insurancee</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Agency</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Tourism</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Payment</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer__body-info">
+            <h5>OUR PARTNERS</h5>
+            <ul class="footer__info-list">
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Booking</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">RentalCar</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">HostelWorld</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Trivago</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">TripAdvisor</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer__body-info">
+            <h5>LAST MINUTE</h5>
+            <ul class="footer__info-list">
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">London</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">California</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Indonesia</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Europe</a>
+              </li>
+              <li class="footer__info-item">
+                <i class='bx bx-chevron-right'></i>
+                <a href="" class="footer__info-link">Oceania</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+      </article>
+      <div class="footer__body-bottom">
+        <p>THE BEST WORLD TRAVEL</p>
+        <p>COPYRIGHT&copy;2023 </p>
+      </div>
+    </section>
+  </footer>
+  <!-- <script src="js/gsap.min.js"></script> -->
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>
