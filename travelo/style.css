@@ -17,7 +17,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 99999999;
-  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6e0b072897469.5bf6e79950d23.gif");
+  background: url("./img/loader.gif") no-repeat cover center center;
 }
 body {
     font-family: "Poppins", sans-serif;
