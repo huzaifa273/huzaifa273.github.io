@@ -11,6 +11,7 @@
   <title>Travelo</title>
 </head>
 <body>
+  <div class="preloader"></div>
   <header>
     <nav>
       <img src="img/logo.png" alt="Travelo" class="logo">
@@ -34,7 +35,7 @@
             <div class="bar"></div>
           </a>
         </li>
-    </ul>
+      </ul>
     </nav>
   </header>
   <main>
@@ -66,6 +67,7 @@
       <img src="img/black_shadow.png" class="black-shadow" alt="">
       <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" class="parallax fog-1" alt="">
     </div>
+    <!-- Search your next holiday section -->
     <div class="details">
       <article class="theme__holiday">
         <h3 class="holiday__title">Search your next holiday</h3>
@@ -102,6 +104,7 @@
         </div>
       </article>
     </div>
+    <!-- OUR PROPOSALS section -->
     <div class="our-proposals">
       <section class="dest__wrap">
         <p class="sub-title__text">OUR PROPOSALS</p>
@@ -230,10 +233,10 @@
               </div>
             </div>
           </div>
-      
         </article>
       </section>
     </div>
+    <!-- *******************************Beaches Section****************************** -->
     <div class="tours">
       <!-- TOURS -->
       <section class="tours__container">
@@ -314,8 +317,8 @@
         </article>
       </section>
     </div>
+    <!-- **************************PROMOTION and packages section*********************-->
     <div>
-      <!-- PROMOTION -->
       <section class="promotion__container">
         <p class="sub-title__text">PROMOTIONS</p>
         <h2 class="title__text">OUR <span class="--title__text-underline promotion-text">PACKAGES</span></h2>
@@ -343,12 +346,12 @@
                 </div>
               </div>
               <div class="promotion__item-desc">
-                <p>Discover the vibrant city of Berlin, where history and modernity intertwine. Immerse yourself in its captivating culture, visit iconic landmarks like the Brandenburg Gate.</p>
+                <p>Discover the vibrant city of Berlin, where history and modernity intertwine. And Immerse yourself in its captivating culture of Berlin city.</p>
               </div>
               <a href="" class="pri-btn promotion-btn-1">DETAILS</a>
             </div>
           </div>
-      
+          <!-- Hong kong -->
           <div class="promotion__item">
             <div class="promotion__item-img --item-img-2">
               <div class="promotion__item-sticker-2">
@@ -531,6 +534,12 @@
   </footer>
   <!-- <script src="js/gsap.min.js"></script> -->
   <script src="js/app.js" defer></script>
+  <script>
+    //after window is loaded completely 
+    window.onload = function(){
+        //hide the preloader
+        document.querySelector(".preloader").style.display = "none";
+    }
+  </script>
 </body>
-
 </html>

@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+.preloader{
+  /*
+  Making the preloader floating over other elements.
+  The preloader is visible by default. 
+  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999999;
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6e0b072897469.5bf6e79950d23.gif");
+}
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -36,12 +49,12 @@ header ul {
     align-items: center;
 }
 header ul a {
-    text-decoration: none;
-    color:#fff;
-    padding: 0 1.5rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 0.83rem;
+  text-decoration: none;
+  color:#fff;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.83rem;
 }
 .search a {
     font-size: 1.05rem;
@@ -111,11 +124,11 @@ header ul a {
 
 
 .bg-img {
-    position: absolute;
-    width: 2800px;
-    top: calc(50% - 300px);
-    left: calc(50% + 10px);
-    z-index: 1;
+  position: absolute;
+  width: 2800px;
+  top: calc(50% - 300px);
+  left: calc(50% + 10px);
+  z-index: 1;
 }
 .fog-7 {
     position: absolute;
@@ -263,12 +276,12 @@ header ul a {
     pointer-events: none;
 }
 .black-shadow {
-    position: absolute;
-    z-index: 20;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    pointer-events: none;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
 }
 .details {
   height: 100vh;
