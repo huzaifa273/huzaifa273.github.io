@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .preloader{
@@ -17,7 +18,16 @@
   width: 100vw;
   height: 100vh;
   z-index: 99999999;
-  background: url("./img/loader.gif") no-repeat cover center center;
+  background: url("./img/loading01.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 2s ease;
+  /* background: #000; */
+}
+.hide-preloader {
+  display: none;
+  transition: 2s ease;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -110,11 +120,61 @@ header ul a {
 
 
 .main {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
+
+/* Scroll animation start */
+
+#scroll-wrapper {
+  z-index: 51; /* this index comes after vingeeta layer which is 50 */
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  color: #fff;
+  display: table;
+}
+
+#scroll-wrapper-inner {
+  display: table-cell;
+  vertical-align:middle;
+  width:100%;
+  height:100%;
+}
+
+#scroll-down {
+    display: block;
+    position: relative;
+    padding-top: 79px;
+  text-align:center;
+}
+
+#scroll-title {
+  display: block;
+  text-transform: uppercase;
+  font-family: "raleway";
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:0.4em;
+  text-align:center;
+  transform: rotate(90deg);
+  margin-bottom: 45px;
+}
+#scroll-down::before {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 90px;
+  background: #fff;
+  content: ' ';
+}
+
+/* Scroll animation end */
 
 .parallax {
   pointer-events: none;
@@ -256,7 +316,7 @@ header ul a {
 }
 .vignette {
     position: absolute;
-    z-index: 100;
+    z-index: 50;
     width: 100%;
     height: 100%;
     top: 0;
@@ -653,14 +713,16 @@ bg-img {
     background-size: auto;
   }
 
-  /*START HEADER */
-  
-  /* Start Subnav */
-  /* End Subnav */
-  
-  /* END HEADER */
-  
-  /*START HOLIDAY */
+
+
+
+
+
+
+
+
+
+  /*START of Search and HOLIDAY */
   
   .theme__holiday {
     position: absolute;
@@ -738,9 +800,39 @@ bg-img {
     display: block;
     font-size: 12px;
   }
+  .arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #14d5b1;
+  }
+  .fa-arrow-up {
+    font-size: xx-large;
+    color: #fff;
+  }
   
-  /* END HOLIDAY */
+  /* Serach and HOLIDAY end */
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*START SUB MENU */
   .sub-menu__check:checked ~ .sub-menu {
     transform: translateX(0%);
@@ -1554,6 +1646,7 @@ bg-img {
     background: no-repeat center / cover
       url("https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-craig-adderley-1563356.jpg&fm=jpg");
     width: 100%;
+    z-index: -1;
     padding-top: 38%;
     position: relative;
   }
@@ -1570,18 +1663,13 @@ bg-img {
   
   .footer__head {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   
   .footer__title,
   .footer__input {
-    width: 50%;
     padding: 0 30px;
-  }
-  
-  .footer__title {
-    padding-left: 20%;
   }
   
   .footer__title p {
@@ -1593,7 +1681,7 @@ bg-img {
   .footer__title h5 {
     font-size: 38px;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
     line-height: 1.8;
   }
   
@@ -2345,4 +2433,69 @@ bg-img {
   .details {
     height: 120vh;
   }
+}
+
+/* Mouse Eye follower */
+
+.orbit {
+  /* transform: rotate(180deg); */
+  transition: 0.3s;
+  z-index: 99999;
+  height: 100px;
+  background-image: url("./img/orbiter.png");
+  background-repeat: no-repeat;
+  width: 90px;
+  overflow: hidden;
+  position: fixed;
+  bottom: -30px;
+  left: 40px;
+  overflow: visible;
+}
+.orbit:hover {
+  /* top: 10px; */
+  /* margin-top: 15px; */
+  background-position-y: 12px;
+  transition: 0.3s;
+}
+.orbit a {
+  position: absolute;
+  top: -20px;
+  text-decoration: none;
+}
+.color {
+  color: #fff;
+}
+.dark-color {
+  color: #000;
+}
+.orbit:hover .orbit-container{
+  margin-top: 12px;
+  transition: 0.3s;
+}
+.orbit-container {
+  position: absolute;
+  top: 19px;
+  left: 18px;
+  transition: 0.3s;
+}
+.eye {
+  transform: rotate(180deg);
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  background: #ffffff;
+}
+.eye:after {
+  /*pupil*/
+  position: absolute;
+  top: -3px;
+  left: 4px;
+  margin: 5px;
+  width: 7px;
+  height: 7px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
 }

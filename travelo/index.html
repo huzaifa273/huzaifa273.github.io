@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/2734247cc0.js" crossorigin="anonymous"></script>
   <title>Travelo</title>
+  
 </head>
 <body>
   <div class="preloader"></div>
@@ -36,10 +37,20 @@
           </a>
         </li>
       </ul>
+      <!-- start of the orbit, the eye follower -->
+      <div class="orbit">
+        <a href="./contact.html" class="color" id="color">Need help?</a>
+        <div class='orbit-container'>
+          <div class='eye'></div>
+          <div class='eye'></div>
+        </div>
+      </div>
+      <!-- End of orbit the eye follower -->
     </nav>
   </header>
   <main>
-    <div class="main">
+    
+    <div class="main" id="main">
       <div class="vignette"></div>
       <img src="img/background.png" data-speedx="0.2" data-speedy="0.7" class="parallax bg-img" alt="">
       <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.2" class="parallax fog-7" alt="">
@@ -66,6 +77,15 @@
       <img src="img/sun_rays.png" class="sun-rays" alt="">
       <img src="img/black_shadow.png" class="black-shadow" alt="">
       <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" class="parallax fog-1" alt="">
+      <div id="scroll-wrapper">
+        <div id="scroll-wrapper-inner">
+          <div id="scroll-title">
+            Scroll
+          </div>
+          <div id="scroll-down">
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Search your next holiday section -->
     <div class="details">
@@ -103,6 +123,9 @@
           </div>
         </div>
       </article>
+      <div class="arrow-up">
+        <a href="#main"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
     </div>
     <!-- OUR PROPOSALS section -->
     <div class="our-proposals">
@@ -122,15 +145,9 @@
                 <h5>Packages</h5>
                 <ul class="dest__overlay-list">
                   <li class="dest__overlay-item">
-                    <a href="" class="dest__overlay-link">Berlin</a>
+                    <a href="./destination.html" class="dest__overlay-link">Berlin</a>
                   </li>
-                  <li class="dest__overlay-item">
-                    <a href="" class="dest__overlay-link">Amsterdam</a>
-                  </li>
-                  <li class="dest__overlay-item">
-                    <a href="" class="dest__overlay-link">Tuscany</a>
-                  </li>
-                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                  <a href="./destination.html" class="dest__overlay-btn">VIEW DESTINATION</a>
                 </ul>
               </div>
             </div>
@@ -149,7 +166,7 @@
                   <li class="dest__overlay-item">
                     <a href="" class="dest__overlay-link">Phuket</a>
                   </li>
-                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                  <a href="./destination.html" class="dest__overlay-btn">VIEW DESTINATION</a>
                 </ul>
               </div>
             </div>
@@ -171,7 +188,7 @@
                   <li class="dest__overlay-item">
                     <a href="" class="dest__overlay-link">Phuket</a>
                   </li>
-                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                  <a href="./destination.html" class="dest__overlay-btn">VIEW DESTINATION</a>
                 </ul>
               </div>
             </div>
@@ -190,7 +207,7 @@
                   <li class="dest__overlay-item">
                     <a href="" class="dest__overlay-link">Tuscany</a>
                   </li>
-                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                  <a href="./destination.html" class="dest__overlay-btn">VIEW DESTINATION</a>
                 </ul>
               </div>
             </div>
@@ -209,7 +226,7 @@
                   <li class="dest__overlay-item">
                     <a href="" class="dest__overlay-link">Amsterdam</a>
                   </li>
-                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                  <a href="./destination.html" class="dest__overlay-btn">VIEW DESTINATION</a>
                 </ul>
               </div>
             </div>
@@ -228,7 +245,7 @@
                   <li class="dest__overlay-item">
                     <a href="" class="dest__overlay-link">San Francisco</a>
                   </li>
-                  <a href="" class="dest__overlay-btn">VIEW DESTINATION</a>
+                  <a href="./destination.html" class="dest__overlay-btn">VIEW DESTINATION</a>
                 </ul>
               </div>
             </div>
@@ -497,7 +514,6 @@
               </li>
             </ul>
           </div>
-  
           <div class="footer__body-info">
             <h5>LAST MINUTE</h5>
             <ul class="footer__info-list">
@@ -538,8 +554,10 @@
     //after window is loaded completely 
     window.onload = function(){
         //hide the preloader
-        document.querySelector(".preloader").style.display = "none";
+        document.querySelector(".preloader").classList.add('hide-preloader')
     }
   </script>
+  <!-- Eye tracker jquery library -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </body>
 </html>
