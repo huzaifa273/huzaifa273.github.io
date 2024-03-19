@@ -1160,7 +1160,12 @@ input[type="text"],
   left: 0;
   right: 0;
 }
-
+@media only screen and (min-width: 720px) {
+  .home-photo .hp-inner {
+    margin-top: 90px;
+    margin-right: 50px;
+  }
+}
 .home-text {
   text-align: left;
   padding-right: 20px;
@@ -3188,7 +3193,7 @@ blockquote {
 }
 .nav-anim:hover .fa-solid {
   color: #005359;
-  transition: .3s;
+  transition: 0.3s;
 }
 .orbit {
   transition: 0.3s;
@@ -3207,7 +3212,7 @@ blockquote {
   background-position-y: 12px;
   transition: 0.3s;
 }
-.orbit:hover .orbit-container{
+.orbit:hover .orbit-container {
   margin-top: 12px;
   transition: 0.3s;
 }
@@ -3238,14 +3243,13 @@ blockquote {
   content: " ";
 }
 
-
 /* ------------- Contact Button ------------------- */
 .btn-3 {
   display: inline-block;
-  padding: .75rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   font-weight: bold;
-  border-radius: .5rem;
-  transition: .3s;
+  border-radius: 0.5rem;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -3253,7 +3257,7 @@ blockquote {
   box-shadow: 0px 0px 40px #005359;
 } */
 
-.btn-3{
+.btn-3 {
   color: white;
   /* background-color: #333; */
   transition: all 0.6s ease;
@@ -3265,8 +3269,7 @@ blockquote {
   z-index: 2;
 }
 
-
-.btn-3::after{
+.btn-3::after {
   content: "";
   position: absolute;
   width: 10%;
@@ -3279,7 +3282,7 @@ blockquote {
   transition: all 0.4s ease;
 }
 
-.btn-3::before{
+.btn-3::before {
   background-color: #333;
   content: "";
   position: absolute;
@@ -3293,24 +3296,24 @@ blockquote {
   z-index: -1;
 }
 
-.btn-3:hover::after{
+.btn-3:hover::after {
   background-color: #ffffff31;
   transform: skew(20deg, 0deg) translateX(230px);
 }
 
-.btn-3:hover::before{
+.btn-3:hover::before {
   color: white;
   background-color: #005359;
   border: 3px solid #005359;
-  
+
   /* transform: skew(20deg, 0deg) scale(1.1); */
 }
 
 .lmpixels-arrow-left:hover i {
-  transition: .3s;
+  transition: 0.3s;
   color: #005359;
 }
-.lmpixels-arrow-right:hover i{
-  transition: .3s;
+.lmpixels-arrow-right:hover i {
+  transition: 0.3s;
   color: #005359;
 }
