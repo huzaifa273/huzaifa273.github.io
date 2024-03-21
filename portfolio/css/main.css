@@ -3332,4 +3332,8 @@ blockquote {
     font-size: 0.8rem;
     letter-spacing: 0.3rem;
   }
+  .btn-3:hover::after {
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(160px);
+  }
 }
