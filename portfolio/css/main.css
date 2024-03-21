@@ -3251,6 +3251,7 @@ blockquote {
   border-radius: 0.5rem;
   transition: 0.3s;
   cursor: pointer;
+  font-size: 1.3rem;
 }
 
 /* .btn-3:hover {
@@ -3298,7 +3299,7 @@ blockquote {
 
 .btn-3:hover::after {
   background-color: #ffffff31;
-  transform: skew(20deg, 0deg) translateX(230px);
+  transform: skew(20deg, 0deg) translateX(290px);
 }
 
 .btn-3:hover::before {
