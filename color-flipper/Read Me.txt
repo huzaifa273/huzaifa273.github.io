@@ -1,4 +1,0 @@
-Purpose:
-It is simple vanila project in javascript to understand the basic's of javascript.
-Function:
-it change background color when click on "Click Me"
