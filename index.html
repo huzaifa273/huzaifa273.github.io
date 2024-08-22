@@ -938,17 +938,6 @@
       data-cf-beacon='{"rayId":"79b45fd869456c1d","version":"2023.2.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}'
       crossorigin="anonymous"
     ></script>
-    <script>
-      window.onload = function() {
-    const defaultSection = document.querySelector('#about-me');
-
-    // Check if there's no hash in the URL
-    if (!window.location.hash) {
-        // Show the default section without adding #about-me to the URL
-        defaultSection.classList.add('active'); // Add your active class or whatever you use to show the section
-        history.replaceState(null, null, ' '); // This clears the URL without reloading the page
-    }
-};
-    </script>
+    
   </body>
 </html>

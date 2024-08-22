@@ -2790,6 +2790,7 @@ blockquote {
   }
   .content-area {
     max-width: 100%;
+    border-radius: 0px;
   }
   .animated-section,
   .single-page-content {
